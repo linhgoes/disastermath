@@ -6,7 +6,7 @@
 
 {% block main %}
 <div class="drought_bg"></div>
-<div class="clearfix about_globe">
+<div class="clearfix margin_top">
   <div class="float_right_70">
     <p class="large">My interest in disasters stems from several things,
     specifically: an influx in lack of aid coordination (an example being
@@ -15,5 +15,16 @@
     in the San Francisco Bay Area &mdash; which is prone to earthquakes.</p>
   </div>
   <div class="globe"></div>
+</div>
+<div class="clearfix margin_top">
+  <div class="float_left_70">
+    <p class="large">This project attempts to measure the "innate" severity of natural disasters, determining
+  what the expected losses should be relative to actual losses. Losses are measured in deaths,
+  total number of people affected, and estimated damages in US millions. Expected losses
+  will eventually be calculated using regression analysis, but for this initial round, will be
+  measured in average losses of similar disasters in similar countries. Similar disasters are
+  categorized by disaster severity, and similar countries are categorized by development levels.</p>
+  </div>
+  <a href="/research"><div class="stats"></div></a>
 </div>
 {% endblock %}
