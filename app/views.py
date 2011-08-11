@@ -40,6 +40,7 @@ def data():
     """Find which dataset you want to download."""
     return render_template('data.html')
 
+
 @views.route('/data/download')
 def download_excel():
     """Send the static Excel file."""
