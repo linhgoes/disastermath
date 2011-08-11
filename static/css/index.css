@@ -8,6 +8,8 @@
 .research_small{background:url('/static/img/small_stats.png') no-repeat center center;height:126px;width:224px;}
 .data_small{background:url('/static/img/small_doc.png') no-repeat center center;height:126px;width:224px;}
 .chart_small{background:url('/static/img/chart.png') no-repeat center center;height:126px;width:224px;}
+.chart_curve_small{background:url('/static/img/chart_curve.png') no-repeat center center;height:126px;width:224px;}
+.pie_small{background:url('/static/img/pie.png') no-repeat center center;height:126px;width:224px;}
 .small_img_path{display:block;font-size:16px;margin:20px auto 0;padding:10px 0;text-align:center;text-transform:uppercase;text-decoration:none;width:120px;}
 .hurricane_bg{background:url('/static/img/hurricane_border.png') no-repeat center center;height:575px;margin:0 auto;width:1024px;margin-bottom:75px;}
 .lightning_bg{background:url('/static/img/lightning_red.png') no-repeat center center;height:575px;margin:0 auto;width:1024px;margin-bottom:75px;}
