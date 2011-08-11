@@ -25,8 +25,26 @@ def about():
 
 @views.route('/research/')
 def research():
-    """Explore the US disaster case study."""
+    """Explore the research."""
     return render_template('research.html')
+
+
+@views.route('/research/earthquakes/')
+def earthquakes():
+    """Explore the earthquake visualization."""
+    return views.send_static_file('graphs/earthquakes.html')
+
+
+@views.route('/research/katrina/')
+def katrina():
+    """Explore the Katrina visualization."""
+    return views.send_static_file('graphs/katrina.html')
+
+
+@views.route('/research/heatwaves/')
+def heatwaves():
+    """Explore the heatwaves visualization."""
+    return views.send_static_file('graphs/heat_wave.html')
 
 
 @views.route('/research/methodology/')
