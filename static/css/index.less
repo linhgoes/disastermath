@@ -1,11 +1,8 @@
-.hurricane_bg{
-  background: url('/static/img/hurricane_border.png') no-repeat center center;
-  height: 575px;
-  margin: 0 auto 80px;
-  width: 1024px;
+.bg_bottom{
+  margin-bottom: 75px;
 }
 .large{
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.7;
   margin: 40px auto;
   text-align: justify;
@@ -17,21 +14,75 @@
   margin: 0 auto;
   width: 1024px;
 }
+.small_left{
+  float: left;
+  margin: 0 55px;
+}
+.small_container{
+  margin: 100px auto 0;
+  width: 1024px;
+}
+.small_img{
+  height: 126px;
+  width: 224px;
+}
+.about_small{
+  background: url('/static/img/small_info.png') no-repeat center center;
+  .small_img;
+}
+.research_small{
+  background: url('/static/img/small_stats.png') no-repeat center center;
+  .small_img;
+}
+.data_small{
+  background: url('/static/img/small_doc.png') no-repeat center center;
+  .small_img;
+}
+.small_img_path{
+  display: block;
+  font-size: 16px;
+  margin: 20px auto 0;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 120px;
+}
+.hurricane_bg{
+  background: url('/static/img/hurricane_border.png') no-repeat center center;
+  height: 575px;
+  margin: 0 auto;
+  width: 1024px;
+  .bg_bottom;
+}
 .lightning_bg{
   background: url('/static/img/lightning_red.png') no-repeat center center;
   height: 575px;
   margin: 0 auto;
   width: 1024px;
+  .bg_bottom;
 }
 .bridge_bg{
   background: url('/static/img/bridge_red.png') no-repeat center center;
   height: 575px;
   margin: 0 auto;
   width: 1024px;
+  .bg_bottom;
 }
 .cloud_bg{
   background: url('/static/img/cloud_bg.png') no-repeat center center;
   height: 575px;
   margin: 0 auto;
   width: 1024px;
+  .bg_bottom;
+}
+.float_left_75{
+  float: left;
+  width: 70%;
+}
+.data_doc{
+  background: url('/static/img/data_doc.png') no-repeat left center;
+  float: right;
+  height: 400px;
+  width: 29%;
 }
