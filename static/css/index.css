@@ -22,3 +22,5 @@
 .globe{background:url('/static/img/globe.png') no-repeat right center;float:left;height:300px;width:29%;}
 .stats{background:url('/static/img/stats.png') no-repeat left center;float:right;height:300px;width:29%;}
 .flash{background:url('/static/img/flash.png') no-repeat left center;float:right;height:500px;width:29%;}
+.float_right_70 h2{font-size:22px;color:#682121;text-align:center;text-transform:uppercase;}
+.resources{background:url('/static/img/resources.png') no-repeat right center;float:left;height:350px;width:29%;}
