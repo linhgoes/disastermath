@@ -1,5 +1,8 @@
+.list {font-size:18px;line-height:1.7;margin:40px auto;text-align:justify;width:75%;list-style-type:circle;}
+.logo{background:url('/static/img/disastermath_home.png') no-repeat center center; height:355px;width:1000px;}
 .bg_bottom{margin-bottom:75px;}
 .large{font-size:18px;line-height:1.7;margin:40px auto;text-align:justify;width:75%;}
+.average{font-size:14px;line-height:1.5;margin:40px auto;text-align:justify;width:75%;}
 .drought_bg{background:url('/static/img/drought_red.png') no-repeat center center;height:575px;margin:0 auto;width:1024px;}
 .small_left{float:left;margin:0 55px;}
 .small_container{margin:100px auto 0;width:1024px;}
@@ -18,9 +21,10 @@
 .float_left_70{float:left;width:70%;}
 .data_doc{background:url('/static/img/data_doc.png') no-repeat left center;float:right;height:250px;width:29%;}
 .margin_top{margin-top:25px;}
-.float_right_70{float:right;margin-top:30px;width:70%;}
+.float_right_70{float:right;text-align:center;margin-top:30px;width:70%;}
 .globe{background:url('/static/img/globe.png') no-repeat right center;float:left;height:300px;width:29%;}
 .stats{background:url('/static/img/stats.png') no-repeat left center;float:right;height:300px;width:29%;}
 .flash{background:url('/static/img/flash.png') no-repeat left center;float:right;height:500px;width:29%;}
-.float_right_70 h2{font-size:22px;color:#682121;text-align:center;text-transform:uppercase;}
+.float_right_70 h2{font-size:18px;color:#000;text-align:center;}
+.float_right_70 h1{font-size:22px;color:#000;text-align:center;text-transform:uppercase;}
 .resources{background:url('/static/img/resources.png') no-repeat right center;float:left;height:350px;width:29%;}

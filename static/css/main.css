@@ -3,7 +3,7 @@ a:hover{background:#682121;color:#fff;text-decoration:none;}
 ::-moz-selection{background:#682121;color:#fff;text-shadow:none;}
 ::selection{background:#682121;color:#fff;text-shadow:none;}
 ul{list-style:none;}
-body{color:#0c0505;}
+body{color:#000;}
 body:after{content:url('/static/img/hurricane_border.png') url('/static/img/drought_red.png') url('/static/img/cloud_bg.png') url('/static/img/lightning_red.png');display:none;}
 header{display:block;margin-bottom:35px;}header ul{margin:0 auto;padding:10px 0;width:90%;}
 header li{float:right;padding-top:38px;}

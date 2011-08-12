@@ -5,7 +5,32 @@
 {% endblock %}
 
 {% block main %}
-<div class="lightning_bg"></div>
+<div class="clearfix margin_top">
+    <div class="float_right_70 h1">
+        <h1>Sources</h1>
+		<table class="large">
+		<tr><td> Original dataset: </td> <td> <a href="http://www.emdat.be/">EM-DAT</a> </td></tr>
+		</table>
+		<h2>Disaster Severity<h2>
+        <table class="large">
+		<tr><td> Earthquakes: </td> <td> <a href="http://earthquake.usgs.gov/earthquakes/eqarchives/"> Deaths by Year, U.S. Geological Survey</a></td></tr>
+		<tr><td> Floods/Storms: </td> <td> <a href="http://www.dartmouth.edu/~floods/Archives/"> Global Active Archive of Large Flood Events,  </td></tr>
+		<tr><td> Volcanoes:	</td><td><a href="www.volcano.si.edu/">	Global Volcanism Program (The Smithsonian Institute) </td> </tr>
+		<tr><td> Wildfires: </td><td> Government and news sources </td></tr>
+		</table>
+		<h2>Development<h2>
+		<ul class="large" class=list>
+			<li><a href="http://data.worldbank.org/indicator/SH.XPD.PCAP">Health Expenditures per capita</a></li>
+			<li><a href="http://data.worldbank.org/indicator/SE.PRM.NENR">Primary School Enrollment</a></li>
+			<li><a href="http://data.worldbank.org/indicator/NY.GDP.MKTP.CD">GDP</a></li>
+			<li><a href="http://data.worldbank.org/indicator/IT.NET.BBND.P2">Broadband Internet subscriptions per 100 people</a></li>
+			<li><a href="http://data.worldbank.org/indicator/IT.MLT.MAIN.P2">Telephone lines per 100 people</a></li>
+			<li><a href="http://data.worldbank.org/indicator/IT.CEL.SETS.P2">Mobile cell subscriptions per 100 people</a></li>
+        </ul>
+    </div>
+    <div class="resources"></div>
+</div>
+
 <div class="clearfix">
   <div class="float_left_70">
     <p class="large"> There has been no open-source, comprehensive dataset
@@ -16,19 +41,5 @@
     also been added.</p>
   </div>
   <a href="/data/download"><div class="data_doc"></div></a>
-</div>
-<div class="clearfix margin_top">
-    <div class="float_right_70">
-        <h2>Sources</h2>
-        <p class="large">
-            Original dataset:  EM-DAT (Centre for Research on the Epidemiology of Disasters (CRED)
-            Earthquakes: 	   Deaths by Year, U.S. Geological Survey
-            Floods/Storms: 	   Global Active Archive of Large Flood Events, 
-            Volcanoes:		   Global Volcanism Program (The Smithsonian Institute)
-            Wildfires: 		   News.
-            Development:	   Health Expenditures per capita, Primary School Enrollment, GDP, Communications (World Bank Data Catalogue)</p>
-        </p>
-    </div>
-    <div class="resources"></div>
 </div>
 {% endblock %}
