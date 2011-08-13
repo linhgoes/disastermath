@@ -15,7 +15,7 @@
  
     </style> 
   </head> 
-  <body><div id="center"><div id="fig"> 
+  <body><div id="center"><div id="fig1"> 
     <script type="text/javascript+protovis"> 
  
 /* Sizing and scales. */
@@ -23,15 +23,15 @@ var w = 600,
     h = 400,
     x = pv.Scale.linear(0, 140000).range(0, w),
     y = pv.Scale.linear(4, 7).range(0, h),
-    c = pv.Scale.log(1, 2000).range("#682121", "#BC9E82");
+    c = pv.Scale.log(1, 2000).range("orange", "brown");
  
 /* The root panel. */
 var vis = new pv.Panel()
     .width(w)
     .height(h)
     .bottom(20)
-    .left(20)
-    .right(10)
+    .left(80)
+    .right(80)
     .top(100);
  
 /* Y-axis and ticks. */
@@ -41,6 +41,12 @@ vis.add(pv.Rule)
     .strokeStyle(function(d) d ? "#eee" : "#000")
   .anchor("left").add(pv.Label)
     .text(y.tickFormat);
+
+	vis.add(pv.Label)
+	    .left(75)
+	    .top(16)
+	    .textAlign("left")
+	    .text("Katrina and other storms, by Damages (x) and Severity (y)");
  
 /* X-axis and ticks. */
 vis.add(pv.Rule)
@@ -58,7 +64,7 @@ vis.add(pv.Panel)
     .left(function(d) x(d.Damages))
     .bottom(function(d) y(d.Severity))
     .strokeStyle(function(d) c(d.Affected))
-    .fillStyle(function() this.strokeStyle().alpha(.7))
+    .fillStyle(function() this.strokeStyle().alpha(.2))
     .size(function(d) Math.sqrt(d.Affected)*2)
     .title(function(d) "Storm Name: " + d.Name + "; " + "Location: " + d.Loc + "; Affected: " + d.Affected);
 

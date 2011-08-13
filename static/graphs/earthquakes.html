@@ -15,7 +15,7 @@
  
     </style> 
   </head> 
-  <body><div id="center"><div id="fig"> 
+  <body><div id="center"><div id="fig1"> 
     <script type="text/javascript+protovis"> 
 	
 /* Sizing and scales. */
@@ -30,8 +30,8 @@ var vis = new pv.Panel()
     .width(w)
     .height(h)
     .bottom(20)
-    .left(20)
-    .right(100)
+    .left(80)
+    .right(80)
     .top(100);
  
 /* Y-axis and ticks. */
@@ -42,6 +42,12 @@ vis.add(pv.Rule)
   .anchor("left").add(pv.Label)
     // .visible(function(d) d > 0 && d < 1)
     .text(y.tickFormat);
+
+	vis.add(pv.Label)
+	    .left(75)
+	    .top(16)
+	    .textAlign("left")
+	    .text("Earthquakes, by Development Level (x) and Severity (y)");
  
 /* X-axis and ticks. */
 vis.add(pv.Rule)

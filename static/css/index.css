@@ -11,6 +11,9 @@
 .research_small{background:url('/static/img/small_stats.png') no-repeat center center;height:126px;width:224px;}
 .data_small{background:url('/static/img/small_doc.png') no-repeat center center;height:126px;width:224px;}
 .chart_small{background:url('/static/img/chart.png') no-repeat center center;height:126px;width:224px;}
+#earthquakes{background:url('/static/img/earthquakes_small.png') no-repeat center center;height:126px;width:224px;}
+#heatwave{background:url('/static/img/heat wave_small.png') no-repeat center center;height:126px;width:224px;}
+#Katrina{background:url('/static/img/Katrina_small.png') no-repeat center center;height:126px;width:224px;}
 .chart_curve_small{background:url('/static/img/chart_curve.png') no-repeat center center;height:126px;width:224px;}
 .pie_small{background:url('/static/img/pie.png') no-repeat center center;height:126px;width:224px;}
 .small_img_path{display:block;font-size:16px;margin:20px auto 0;padding:10px 0;text-align:center;text-transform:uppercase;text-decoration:none;width:130px;}
@@ -28,3 +31,4 @@
 .float_right_70 h2{font-size:18px;color:#000;text-align:center;}
 .float_right_70 h1{font-size:22px;color:#000;text-align:center;text-transform:uppercase;}
 .resources{background:url('/static/img/resources.png') no-repeat right center;float:left;height:350px;width:29%;}
+.spacing{padding:60px;}

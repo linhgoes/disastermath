@@ -31,7 +31,7 @@ var vis = new pv.Panel()
     .height(h)
     .bottom(20)
     .left(20)
-    .right(100)
+    .right(80)
     .top(100);
  
 /* Y-axis and ticks. */
@@ -42,16 +42,23 @@ vis.add(pv.Rule)
   .anchor("left").add(pv.Label)
     // .visible(function(d) d > 0 && d < 1)
     .text(y.tickFormat);
- 
+vis.add(pv.Label)
+    .left(75)
+    .top(16)
+    .textAlign("left")
+    .text("Heat waves, by Development Level (x) and Severity in days (y)");
+
+
 /* X-axis and ticks. */
 vis.add(pv.Rule)
     .data(x.ticks())
     .left(x)
     .strokeStyle(function(d) d ? "#eee" : "#000")
   .anchor("bottom").add(pv.Label)
+	.text("Country Development Level")
     .visible(function(d) d > 0 && d < 140000)
     .text(x.tickFormat);
- 
+	
 /* The dot plot! */
 vis.add(pv.Panel)
  .data(data)
