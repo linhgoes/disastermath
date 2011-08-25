@@ -1,6 +1,8 @@
 .list {font-size:18px;line-height:1.7;margin:40px auto;text-align:justify;width:75%;list-style-type:circle;}
 .logo{background:url('/static/img/disastermath_home.png') no-repeat center center; height:355px;width:1000px;}
 .bg_bottom{margin-bottom:75px;}
+.xlarge{font-size:28px;line-height:1.7;margin:10px auto;text-align:justify;width:85%;}
+.normal{font-size:14px;line-height:1.7;margin:10px auto;text-align:justify;width:85%;}
 .large{font-size:18px;line-height:1.7;margin:40px auto;text-align:justify;width:75%;}
 .average{font-size:14px;line-height:1.5;margin:40px auto;text-align:justify;width:75%;}
 .drought_bg{background:url('/static/img/drought_red.png') no-repeat center center;height:575px;margin:0 auto;width:1024px;}
@@ -18,7 +20,7 @@
 .pie_small{background:url('/static/img/pie.png') no-repeat center center;height:126px;width:224px;}
 .small_img_path{display:block;font-size:16px;margin:20px auto 0;padding:10px 0;text-align:center;text-transform:uppercase;text-decoration:none;width:130px;}
 .hurricane_bg{background:url('/static/img/hurricane_border.png') no-repeat center center;height:575px;margin:0 auto;width:1024px;margin-bottom:75px;}
-.lightning_bg{background:url('/static/img/lightning_red.png') no-repeat center center;height:575px;margin:0 auto;width:1024px;margin-bottom:75px;}
+.development_map{background:url('/static/img/Development Map_final.svg') no-repeat center center;height:575px;margin:0 auto;width:1024px;margin-bottom:75px;}
 .bridge_bg{background:url('/static/img/bridge_red.png') no-repeat center center;height:575px;margin:0 auto;width:1024px;margin-bottom:75px;}
 .cloud_bg{background:url('/static/img/cloud_bg.png') no-repeat center center;height:575px;margin:0 auto;width:1024px;margin-bottom:75px;}
 .float_left_70{float:left;width:70%;}

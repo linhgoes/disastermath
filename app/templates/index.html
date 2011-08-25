@@ -11,12 +11,18 @@
 
 
 {% block main %}
-<p class="large">This project has two purposes. The first: create an <a
-  href="{{ url_for('views.data') }}">open-source disaster dataset</a> that
-contains data on all the common elements of disasters. The second: <a
-  href="{{ url_for('views.research') }}">quantify how
-  well cities and countries have coped with disasters</a> relative to similar
-disasters in similarly developed countries.</p>
+<p class="xlarge"> DisasterMath </p> <p class="large"> ...examines the outcomes of disasters across types, severities, and countries. DisasterMath was built for cities and countries to understand how well they coped with a disaster relative to other places.</p>
+<p class="normal"> DisasterMath currently uses the <a href="http://www.emdat.be/database"> EM-DAT disaster database.</a><br>
+<br>
+And pulls data from: <br>
+<a href="http://www.data.worldbank.org"> World Bank data indicators</a> to categorize a country's development level<br>
+<a href="http://earthquake.usgs.gov/earthquakes/eqarchives/"> U.S. Geological Survey</a> for earthquake severity <br>
+<a href="http://www.dartmouth.edu/~floods/Archives/"> Global Active Archive of Large Flood Events </a> for flood severity <br>
+<a href="www.volcano.si.edu/">	Global Volcanism Program (The Smithsonian Institute) </a> for volcano severity <br>
+And news and government sources for wildfire severity
+</p>	
+	
+
 <div class="clearfix small_container">
   <div class="small_left ">
     <a href="/about/"><div class="about_small"></div></a>
