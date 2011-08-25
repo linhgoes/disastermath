@@ -20,13 +20,13 @@
 .pie_small{background:url('/static/img/pie.png') no-repeat center center;height:126px;width:224px;}
 .small_img_path{display:block;font-size:16px;margin:20px auto 0;padding:10px 0;text-align:center;text-transform:uppercase;text-decoration:none;width:130px;}
 .hurricane_bg{background:url('/static/img/hurricane_border.png') no-repeat center center;height:575px;margin:0 auto;width:1024px;margin-bottom:75px;}
-.development_map{background:url('/static/img/Development Map_final.svg') no-repeat center center;height:575px;margin:0 auto;width:1024px;margin-bottom:75px;}
+.development_map{background:url('/static/img/Development_Map_final.svg') no-repeat center center;height:575px;margin:0 auto;width:1024px;margin-bottom:10px;}
 .bridge_bg{background:url('/static/img/bridge_red.png') no-repeat center center;height:575px;margin:0 auto;width:1024px;margin-bottom:75px;}
 .cloud_bg{background:url('/static/img/cloud_bg.png') no-repeat center center;height:575px;margin:0 auto;width:1024px;margin-bottom:75px;}
 .float_left_70{float:left;width:70%;}
 .data_doc{background:url('/static/img/data_doc.png') no-repeat left center;float:right;height:250px;width:29%;}
 .margin_top{margin-top:25px;}
-.float_right_70{float:right;text-align:center;margin-top:30px;width:70%;}
+.float_right_70{float:right;text-align:right;margin-top:30px;width:70%;}
 .globe{background:url('/static/img/globe.png') no-repeat right center;float:left;height:300px;width:29%;}
 .stats{background:url('/static/img/stats.png') no-repeat left center;float:right;height:300px;width:29%;}
 .flash{background:url('/static/img/flash.png') no-repeat left center;float:right;height:500px;width:29%;}
