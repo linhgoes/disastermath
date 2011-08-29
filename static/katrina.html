@@ -15,14 +15,14 @@
  
     </style> 
   </head> 
-  <body><div id="center"><div id="fig"> 
+  <body><div id="center"><div id="fig1"> 
     <script type="text/javascript+protovis"> 
  
 /* Sizing and scales. */
-var w = 800,
+var w = 600,
     h = 400,
-    x = pv.Scale.linear(0, 5).range(0, w),
-    y = pv.Scale.linear(0, 100).range(0, h),
+    x = pv.Scale.linear(0, 140000).range(0, w),
+    y = pv.Scale.linear(4, 7).range(0, h),
     c = pv.Scale.log(1, 2000).range("orange", "brown");
  
 /* The root panel. */
@@ -30,7 +30,7 @@ var vis = new pv.Panel()
     .width(w)
     .height(h)
     .bottom(20)
-    .left(20)
+    .left(80)
     .right(80)
     .top(100);
  
@@ -40,46 +40,45 @@ vis.add(pv.Rule)
     .bottom(y)
     .strokeStyle(function(d) d ? "#eee" : "#000")
   .anchor("left").add(pv.Label)
-    // .visible(function(d) d > 0 && d < 1)
     .text(y.tickFormat);
-vis.add(pv.Label)
-    .left(75)
-    .top(16)
-    .textAlign("left")
-    .text("Heat waves, by Development Level (x) and Severity in days (y)");
 
-
+	vis.add(pv.Label)
+	    .left(75)
+	    .top(16)
+	    .textAlign("left")
+	    .text("Katrina and other storms, by Damages (x) and Severity (y)");
+ 
 /* X-axis and ticks. */
 vis.add(pv.Rule)
     .data(x.ticks())
     .left(x)
     .strokeStyle(function(d) d ? "#eee" : "#000")
   .anchor("bottom").add(pv.Label)
-	.text("Country Development Level")
     .visible(function(d) d > 0 && d < 140000)
     .text(x.tickFormat);
-	
+ 
 /* The dot plot! */
-vis.add(pv.Panel)
- .data(data)
-  .add(pv.Dot)
-    .left(function(d) (x(d.Development)))
-    .bottom(function(d) (y(d.Severity)))
-    .strokeStyle(function(d) c(d.Affected))
-    .fillStyle(function() this.strokeStyle().alpha(.2))
-    .size(function(d) Math.sqrt(d.Affected)*2)
-    .title(function(d) d.country + "; " + " People Affected: " + d.Affected);
-
 vis.add(pv.Panel)
     .data(data)
   .add(pv.Dot)
-    .left(function(d) (x(d.Development)))
-    .bottom(function(d) (y(d.Severity)))
-    .strokeStyle(function(d) c(d.Deaths))
+    .left(function(d) x(d.Damages))
+    .bottom(function(d) y(d.Severity))
+    .strokeStyle(function(d) c(d.Affected))
     .fillStyle(function() this.strokeStyle().alpha(.2))
-    .size(function(d) Math.sqrt(d.Deaths)*2)
-    .title(function(d) d.country + "; " + " Deaths: " + d.Deaths);
+    .size(function(d) Math.sqrt(d.Affected)*2)
+    .title(function(d) "Storm Name: " + d.Name + "; " + "Location: " + d.Loc + "; Affected: " + d.Affected);
 
+vis.add(pv.Panel)
+  .data(data)
+.add(pv.Dot)
+  .left(function(d) x(d.Damages))
+  .bottom(function(d) y(d.Severity))
+  .strokeStyle(function(d) c(d.Deaths))
+  .fillStyle(function() this.strokeStyle().alpha(1))
+  .size(function(d) Math.sqrt(d.Deaths)*2)
+  .title(function(d) "Storm Name: " + d.Name + "; " + "Location: " + d.Loc + "; Deaths: " + d.Deaths);
+
+ 
 vis.render();
  
     </script> 
